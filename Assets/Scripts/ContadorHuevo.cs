@@ -16,9 +16,9 @@ public class ContadorHuevo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.ContadorHuevos != huevosAntes)
+        if (GameManager.huevo != huevosAntes)
         {
-            huevosAntes = GameManager.ContadorHuevos;
+            huevosAntes = GameManager.huevo;
             labelHuevos.text = $"Huevos: {huevosAntes}";
         }
     }
